@@ -5,7 +5,7 @@ function Header(){
     return(
         <nav id="header" className="navbar navbar-expand-lg navbar-light bg-light p-0">
             <div className="container">
-                <a className="navbar-brand" href="index.html"><img className="img-fluid" src={logo} alt="logo"></img></a>
+                <a className="navbar-brand" href="index.js"><img className="img-fluid" src={logo} alt="logo"></img></a>
                 <button className="navbar-toggler" 
                         type="button" 
                         data-toggle="collapse" 
@@ -35,8 +35,8 @@ function Header(){
                                 About Us
                             </a>
                             <div className="dropdown-menu bg-light m-2 border-0" aria-labelledby="navbarDropdownMenuLink">
-                                <a className="dropdown-item text-center mt-2 mb-3" href="/pages/about.html">Vision and strategy</a>
-                                <a className="dropdown-item text-center mt-3 mb-2" href="/index.html#contact">Contact Us</a>
+                                <a className="dropdown-item text-center mt-2 mb-3" href=" ">Vision and strategy</a>
+                                <a className="dropdown-item text-center mt-3 mb-2" href=" ">Contact Us</a>
                             </div>
                         </li>
                     </ul>

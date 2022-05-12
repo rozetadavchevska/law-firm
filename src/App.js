@@ -1,15 +1,18 @@
 // import logo from 'assets/logo.png';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import {Header} from './components/components';
+import Popper from '@popperjs/core';
+import $ from 'jquery';
+import {Header, Footer, Hero} from './components/components';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Hero />
+      <Footer />
     </div>
   );
 }
