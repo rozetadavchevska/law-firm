@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero(){
     return(
-        <section className="container-overlay">
+        <section className="container-overlay bg-light">
         <div className="hero">
           <div className="hero-container">
             <h1 className="hero-text">Dedicated to the pursuit of justice</h1>

@@ -28,7 +28,8 @@
     "npm": ">=8.7.0"
   },
   "overrides": {
-    "react": "$react"
+    "react": "$react",
+    "autoprefixer": "10.4.5"
   },
   "eslintConfig": {
     "extends": [
