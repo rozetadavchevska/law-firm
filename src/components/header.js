@@ -30,37 +30,6 @@ function Header(){
             </Navbar.Collapse>
         </Container>
         </Navbar>
-
-        // <nav id="header" className="navbar navbar-expand-lg navbar-light bg-light">
-        //     <div className="container">
-        //         <a className="navbar-brand" href="index.js"><img className="img-fluid" src={logo} alt="logo"></img></a>
-        //         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        //         <Navbar.Collapse id="basic-navbar-nav">
-        //             <Nav className="me-auto">
-        //                 <Nav.Link href="#home">Home</Nav.Link>
-        //                 <Nav.Link href="#link">Link</Nav.Link>
-        //             <NavDropdown title="About Us" id="nav-dropdown" className="bg-light m-2 border-0">
-        //                 <NavDropdown.Item className="text-start mt-2 mb-3" eventKey="4.1">Vision and strategy</NavDropdown.Item>
-        //                 <NavDropdown.Item className="text-start mt-3 mb-2" eventKey="4.2">Contact us</NavDropdown.Item>
-        //             </NavDropdown>
-
-        //                 {/* <li className="nav-item dropdown text-center m-2">
-        //                     <a className="nav-link dropdown-toggle" 
-        //                     href=" " 
-        //                     id="navbarDropdownMenuLink" 
-        //                     data-toggle="dropdown" 
-        //                     aria-expanded="false">
-        //                         About Us
-        //                     </a>
-        //                     <div className="dropdown-menu bg-light m-2 border-0" aria-labelledby="navbarDropdownMenuLink">
-        //                         <a className="dropdown-item text-center mt-2 mb-3" href=" ">Vision and strategy</a>
-        //                         <a className="dropdown-item text-center mt-3 mb-2" href=" ">Contact Us</a>
-        //                     </div>
-        //                 </li> */}
-        //             </Nav>
-        //         </div>
-        //     </div>
-        // </nav>
     )
 }
 
