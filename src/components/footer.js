@@ -20,11 +20,11 @@ function Footer(){
                     </div>
                     <div className="col-md text-light">
                         <p>Check our social media presence</p>
-                        <img className="socials" src={gmail} alt="gmail"></img>
-                        <img className="socials" src={facebook} alt="facebook"></img>
-                        <img className="socials" src={instagram} alt="instagram"></img>
-                        <img className="socials" src={linkedin} alt="linkedin"></img>
-                        <img className="socials" src={twitter} alt="twitter"></img>
+                        <a href=" "><img className="socials" src={gmail} alt="gmail"></img></a>
+                        <a href="https://www.facebook.com/"><img className="socials" src={facebook} alt="facebook"></img></a>
+                        <a href="https://www.instagram.com/"><img className="socials" src={instagram} alt="instagram"></img></a>
+                        <a href="https://www.linkedin.com/"><img className="socials" src={linkedin} alt="linkedin"></img></a>
+                        <a href="https://twitter.com/"><img className="socials" src={twitter} alt="twitter"></img></a>
                     </div>
                 </div>
             </div>
