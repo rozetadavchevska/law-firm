@@ -1,13 +1,17 @@
 import React from 'react';
+import {Link, Route, Routes} from 'react-router-dom';
+import {Button} from 'react-bootstrap';
+import {Contact} from '../pages/pages';
 
 function Hero(){
     return(
+      <>
         <section className="container-overlay bg-light">
         <div className="hero">
           <div className="hero-container">
             <h1 className="hero-text">Dedicated to the pursuit of justice</h1>
             <h4 className="hero-text">Let our experience be your guide</h4>
-            <a href=" "><button className="btn btn-light m-1">Get in touch</button></a>
+            <Button as={Link} to="/contact" className="btn btn-light m-1">Get in touch</Button>
           </div>
         </div>
       
@@ -30,6 +34,13 @@ function Hero(){
           </div>
         </div>
       </section>
+
+      <div>
+      <Routes>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+      </div>
+      </>
     )
 }
 
