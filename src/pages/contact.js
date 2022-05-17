@@ -36,16 +36,14 @@ function Contact(){
                             type="text"
                             placeholder="First name"
                         />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="6" controlId="validationCustom02">
+                        <Form.Group className="last-name" as={Col} md="6" controlId="validationCustom02">
                         <Form.Label>Last name</Form.Label>
                         <Form.Control
                             required
                             type="text"
                             placeholder="Last name"
                         />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                     </Row>
                     <Row>

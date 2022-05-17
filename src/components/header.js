@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar, Nav, Container, Image, Dropdown} from "react-bootstrap";
-import logo from './assets/logo.svg';
+import Logo from '../assets/logo.svg';
 import {Route, Routes, Link} from 'react-router-dom';
 import {Home, Services, Contact, Vision} from "../pages/pages";
 
@@ -10,7 +10,7 @@ function Header(){
         <>
             <Navbar bg="light" variant="light" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to="/home"><Image fluid src={logo}></Image></Navbar.Brand>
+                <Navbar.Brand as={Link} to="/home"><Image fluid src={Logo}></Image></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" bg="light"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Container fluid>
@@ -18,21 +18,15 @@ function Header(){
                     
                         <Nav.Link className="m-2" as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link className="m-2" href="#sectors">Sectors</Nav.Link>
-                        {/* <LinkContainer to="../pages/services"> */}
                         <Nav.Link as={Link} to="/services" className="m-2">Services</Nav.Link>
-                        {/* </LinkContainer> */}
                         <Dropdown className="text-center border-0" id="dropdown">
                             <Dropdown.Toggle bg="light" variant="light" id="dropdown-basic" className="m-2 justify-content-center">
                                 About Us
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu className="bg-light text-start m-2 border-0">
-                            {/* <LinkContainer to="../pages/vision"> */}
                                 <Dropdown.Item as={Link} to="/vision" className="mt-2 mb-3">Vision and Strategy</Dropdown.Item>
-                            {/* </LinkContainer> */}
-                            {/* <LinkContainer to="../pages/contact"> */}
                                 <Dropdown.Item as={Link} to="/contact" className="mt-3 mb-2">Contact Us</Dropdown.Item>
-                            {/* </LinkContainer> */}
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>
