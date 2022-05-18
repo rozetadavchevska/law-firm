@@ -9,8 +9,8 @@ import Twitter from '../assets/twitter.svg';
 function Footer(){
     return(
         <footer id="footer" className="bg-dark">
-            <div className="container pt-4 pb-4">
-                <div className="row justify-content-around">
+            <div className="container pt-4">
+                <div className="row justify-content-around pb-4">
                     <div className="col-md-3">
                         <img className="footer-brand" src={Logo} alt="logo"></img>
                     </div>
@@ -27,7 +27,11 @@ function Footer(){
                         <a href="https://twitter.com/"><img className="socials" src={Twitter} alt="twitter"></img></a>
                     </div>
                 </div>
+                <div>
+                    <p className="footer-copyright mt-4 mb-0 pb-2 text-muted">Copyright &copy; Rozeta Davchevska</p>
+                </div>
             </div>
+            
         </footer>
     )
 }
