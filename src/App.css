@@ -97,6 +97,24 @@
     font-size: inherit !important;
 }
 
+.card-title{
+    font-weight: 600 !important;
+}
+
+.card-container{
+    background-color: #c8c8c8 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    margin: 30px !important;
+    width: 15.6em !important;
+}
+
+.card-image{
+    height: 9em !important;
+    width: 15.6em !important;
+}
+
+
 @media (max-width: 768px) { 
 
     .nav-item, .nav-link{
@@ -125,4 +143,12 @@
         margin-top: 15px !important;
     }
 
+    /* .card-group{
+        display: block !important;
+    }
+    
+    .card-container{
+        margin: 30px !important;
+    } */
 }
+

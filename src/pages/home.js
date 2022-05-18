@@ -4,7 +4,6 @@ import {Hero, Expertice, Sectors,   Footer} from '../components/components'
 function Home(){
     return(
         <>
-           
             <Hero />
             <Expertice />
             <Sectors />
