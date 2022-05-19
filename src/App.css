@@ -112,13 +112,50 @@
     border: none !important;
     margin: 30px !important;
     width: 15.6em !important;
-}
+} 
 
 .card-image{
-    height: 9em !important;
-    width: 15.6em !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.office-cont{
+    display: flex;
+    align-items: center;
 }
 
+.office-img1-cont,.office-img2-cont,.office-img3-cont{
+    height: 50% !important;
+    width: 50% !important;
+}
+
+.office-text1-cont,.office-text2-cont,.office-text3-cont{
+    width: 50% !important;
+    display: flex;
+    align-items: center !important;
+    border-radius: 10px;
+    background-color: #e9ce9c;
+    z-index: 9;
+}
+
+.office-text1-cont{
+    margin-left: -40px !important;
+}
+
+.office-text2-cont{
+    margin-right: -40px !important;
+    margin-top: 60px !important;
+}
+
+.office-text3-cont{
+    margin-left: -40px !important;
+    flex-direction: column;
+}
+
+.conduct{
+    list-style: square;
+}
 
 @media (max-width: 768px) { 
 
@@ -148,12 +185,52 @@
         margin-top: 15px !important;
     }
 
-    /* .card-group{
-        display: block !important;
-    }
-    
-    .card-container{
-        margin: 30px !important;
-    } */
+    .card-group{
+        flex-direction: column !important;
+        align-items: center;
+    }    
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-group{
+        flex-direction: column !important;
+        align-items: center;
+    }
+} 
+
+@media (max-width: 1024px){
+    .office-img1-cont,.office-img2-cont,.office-img3-cont{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .office-img2-cont{
+        margin-bottom: 50px;
+    }
+
+    .office-cont{
+        flex-direction: column;
+    }
+
+    .office-text1-cont,.office-text2-cont,.office-text3-cont{
+        width: 100% !important;
+        
+    }
+    
+    .office-text1-cont{
+        margin-top: -45px;
+        margin-left: -40px !important;
+    }
+    
+    .office-text2-cont{
+        margin-right: -40px !important;
+        margin-bottom: -23px;
+        margin-top: 60px !important;
+    }
+    
+    .office-text3-cont{
+        margin-top: -30px;
+        margin-left: -40px !important;
+        flex-direction: column;
+    }
+}

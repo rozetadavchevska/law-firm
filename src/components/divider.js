@@ -3,8 +3,8 @@ import React from 'react';
 function Divider (){
 
     return(
-        <div class="mb-4">
-                <hr class="solid"></hr>
+        <div className="mb-4">
+                <hr className="solid"></hr>
         </div>
     )
 
