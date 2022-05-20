@@ -36,5 +36,5 @@ This is a beginner project that's the product of the time spent learning the bas
 
 Rozeta Davchevska -  rozetadavchevska@gmail.com - [LinkedIn](https://linkedin.com/in/rozetadavchevska) - [Behance](https://www.behance.net/rozetadavchevska)
 
-Project Link: [https://github.com/rozetadavchevska/law-firm]([https://github.com/rozetadavchevska/law-firm)
+Project Link: [https://github.com/rozetadavchevska/law-firm](https://github.com/rozetadavchevska/law-firm)
 
