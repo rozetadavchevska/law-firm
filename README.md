@@ -17,7 +17,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Hetfield & Heiden is a project for a law firm. This website aims for potential clients to get familiar with the law firm and their legal services and contact them through the form or other ways if interested.<br/>
+Project for the Hetfield & Heiden law firm. This website aims for potential clients to get familiar with the law firm and their legal services and contact them through the form or other ways if interested.<br/>
 This is a beginner project that's the product of the time spent learning the basics of React.js and applying the knowledge in order to broaden my skills. During the process, I have learned how to create React components, connect and route from one page to another with React Router, using React Helmet to customise the title and the pages' meta tags. To make the UI of the page more pleasant to the eye of the user and responsive on all devices, I was using Bootstrap and React-Bootstrap, while also implementing custom CSS.    
 
 
