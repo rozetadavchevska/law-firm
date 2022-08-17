@@ -9,6 +9,7 @@ import {Home} from './pages/pages';
 import Icon from './assets/logo.svg';
 
 function App() {
+
   return (
     <div className="App">
       <Helmet>

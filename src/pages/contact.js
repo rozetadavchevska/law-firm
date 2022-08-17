@@ -1,20 +1,29 @@
 import React, {useState} from 'react';
+import $ from 'jquery';
 import {Container, Form, Row, Col, Button} from "react-bootstrap";
 import {Footer} from '../components/components';
 
 
 function Contact(){
 
-    const [validated, setValidated] = useState(false);
-
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-        }
-
-        setValidated(true);
+    const [setName] = useState("");
+    const [setResult] = useState("");
+  
+    const handleChange = (e) => {
+        setName(e.target.value);
+    };
+  
+    const handleSumbit = (e) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                setResult(data);
+            },
+        });
     };
 
     return(
@@ -27,7 +36,13 @@ function Contact(){
                 </Container>
 
 
-                <Form className="form-container" noValidate validated={validated} onSubmit={handleSubmit}>
+                <Form 
+                    className="form-container" 
+                    action="http://localhost:8000/server.php"
+                    method="post"
+                    noValidate
+                    onSubmit={(event) => handleSumbit(event)}
+                >
                     <Row className="mb-3">
                         <Form.Group as={Col} md="6" controlId="validationCustom01">
                         <Form.Label>First name</Form.Label>
@@ -65,6 +80,7 @@ function Contact(){
                         required
                         label="Agree to terms and conditions"
                         feedback="You must agree before submitting."
+                        onChange={(event) => handleChange(event)}
                         feedbackType="invalid"
                         />
                     </Form.Group>
