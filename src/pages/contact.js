@@ -3,7 +3,7 @@ import $ from 'jquery';
 import {Container, Form, Row, Col, Button} from "react-bootstrap";
 import {Footer} from '../components/components';
 
-
+//
 function Contact(){
 
     const [setName] = useState("");
@@ -17,7 +17,7 @@ function Contact(){
         e.preventDefault();
         const form = $(e.target);
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: form.attr("action"),
             data: form.serialize(),
             success(data) {
@@ -40,6 +40,7 @@ function Contact(){
                     className="form-container" 
                     action="http://localhost:8000/server.php"
                     method="post"
+                    name="form"
                     noValidate
                     onSubmit={(event) => handleSumbit(event)}
                 >
@@ -50,6 +51,7 @@ function Contact(){
                             required
                             type="text"
                             placeholder="First name"
+                            name="fname"
                         />
                         </Form.Group>
                         <Form.Group className="last-name" as={Col} md="6" controlId="validationCustom02">
@@ -58,22 +60,23 @@ function Contact(){
                             required
                             type="text"
                             placeholder="Last name"
+                            name="lname"
                         />
                         </Form.Group>
                     </Row>
                     <Row>
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control required type="email" placeholder="Email" />
+                        <Form.Control required type="email" placeholder="Email" name="email"/>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGridAddress">
+                    {/* <Form.Group className="mb-3" controlId="formGridAddress">
                         <Form.Label>Address</Form.Label>
-                        <Form.Control required placeholder="Street Address" />
-                    </Form.Group>
+                        <Form.Control required placeholder="Street Address" name="address"/>
+                    </Form.Group> */}
                     </Row>
                     <Form.Group  className="mb-3" controlId="exampleForm.ControlTextarea">
                         <Form.Label>How can we help you?</Form.Label>
-                        <Form.Control required as="textarea" rows={3} />
+                        <Form.Control required as="textarea" name="message" rows={3} />
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Check
@@ -84,7 +87,7 @@ function Contact(){
                         feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button className="bg-dark border-dark" type="submit">Submit</Button>
+                    <Button className="bg-dark border-dark" type="submit" name="submit">Submit</Button>
                     </Form>
             </Container>
         </section>

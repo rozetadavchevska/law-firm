@@ -15,7 +15,7 @@ function Footer(){
                         <img className="footer-brand" src={Logo} alt="logo"></img>
                     </div>
                     <div className="col-md text-light">
-                        <p>Location: 9253 Victoria Road London NW21 3KV</p>
+                        <p>Location: 58 Park St, London SE1 9ED, UK</p>
                         <p>Phone number: +44 20 7946 0056</p>
                     </div>
                     <div className="col-md text-light">
