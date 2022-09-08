@@ -6,6 +6,34 @@ import {Footer} from '../components/components';
 //
 function Contact(){
 
+    constructor(){
+        super(props);
+        this.state = {
+          fname: '',
+          lname: '',
+          email: '',
+          message: '',
+          mailSent: false,
+          error: null
+        }
+      }
+
+      handleFormSubmit = e => {
+        e.preventDefault();
+        axios({
+          method: 'post',
+          url: `${API_PATH}`,
+          headers: { 'content-type': 'application/json' },
+          data: this.state
+        })
+          .then(result => {
+            this.setState({
+              mailSent: result.data.sent
+            })
+          })
+          .catch(error => this.setState({ error: error.message }));
+      };
+
 
     return(
         <>
@@ -32,6 +60,8 @@ function Contact(){
                             type="text"
                             placeholder="First name"
                             name="fname"
+                            value={this.state.fname}
+                            onChange={e => this.setState({ fname: e.target.value })}
                         />
                         </Form.Group>
                         <Form.Group className="last-name" as={Col} md="6" controlId="validationCustom02">
@@ -41,13 +71,22 @@ function Contact(){
                             type="text"
                             placeholder="Last name"
                             name="lname"
+                            value={this.state.lname}
+                            onChange={e => this.setState({ lname: e.target.value })}
                         />
                         </Form.Group>
                     </Row>
                     <Row>
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control required type="email" placeholder="Email" name="email"/>
+                        <Form.Control 
+                            required 
+                            type="email" 
+                            placeholder="Email" 
+                            name="email"
+                            value={this.state.email}
+                            onChange={e => this.setState({ email: e.target.value })}
+                        />
                     </Form.Group>
                     {/* <Form.Group className="mb-3" controlId="formGridAddress">
                         <Form.Label>Address</Form.Label>
@@ -56,17 +95,34 @@ function Contact(){
                     </Row>
                     <Form.Group  className="mb-3" controlId="exampleForm.ControlTextarea">
                         <Form.Label>How can we help you?</Form.Label>
-                        <Form.Control required as="textarea" name="message" rows={3} />
+                        <Form.Control 
+                            required 
+                            as="textarea" 
+                            name="message" 
+                            rows={3} 
+                            onChange={e => this.setState({ message: e.target.value })}
+                            value={this.state.message}
+                        />
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Check
-                        required
-                        label="Agree to terms and conditions"
-                        feedback="You must agree before submitting."
-                        feedbackType="invalid"
+                            required
+                            label="Agree to terms and conditions"
+                            feedback="You must agree before submitting."
+                            feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button className="bg-dark border-dark" type="submit" name="submit">Submit</Button>
+                    <Button 
+                        className="bg-dark border-dark" 
+                        type="submit" 
+                        name="submit"
+                        onClick={e => this.handleFormSubmit(e)} 
+                        value="Submit"> Submit</Button>
+                    <div>
+                        {this.state.mailSent &&
+                            <div>Thank you for contcting us.</div>
+                        }        
+                    </div>        
                     </Form>
             </Container>
         </section>
