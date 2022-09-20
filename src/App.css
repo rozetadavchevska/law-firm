@@ -80,7 +80,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
+    display: flex !important;
+    justify-content: center;
 }
 
 
@@ -97,6 +98,15 @@
     justify-self: center !important;
     width: 80%;
 } 
+
+.contact-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fname,.lname{
+    width: 49%;
+}
 
 .btn{
     font-size: inherit !important;
