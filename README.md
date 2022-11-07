@@ -34,7 +34,6 @@ This is a beginner project that's the product of the time spent learning the bas
 <!-- CONTACT -->
 ## Contact
 
-Rozeta Davchevska -  rozetadavchevska@gmail.com - [LinkedIn](https://linkedin.com/in/rozetadavchevska) - [Behance](https://www.behance.net/rozetadavchevska)
-
-Project Link: [https://github.com/rozetadavchevska/law-firm](https://github.com/rozetadavchevska/law-firm)
-
+Rozeta Davchevska <br>
+<a href="mailto:rozetadavchevska@gmail.com"><img height="28" width="28" align="center" style="margin:5px;" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"/></a> rozetadavchevska@gmail.com <br>
+<a href="https://www.linkedin.com/in/rozetadavchevska/"><img height="28" width="28" align="center" style="margin:5px;" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/></a> [LinkedIn](https://linkedin.com/in/rozetadavchevska)<br>
